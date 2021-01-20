@@ -33,12 +33,12 @@ When Chris mentions ajax, what does he mean?
 #### Inside the React app
 You will have a package.json; it will have the scripts that appear in the terminal when you create the react app. There are also a node modules directory and git directory as well.
 
-~Note~ When creating a react app, it will automatically create a .git directory so make sure to NOT nest this creation inside of another git directory. 
+**Note** When creating a react app, it will automatically create a .git directory so make sure to NOT nest this creation inside of another git directory. 
 
 #### Editing the App.js
 This file is inside of the `src` directory. When you save this file, the react dev server will load the browser, watch for changes and reload your changes.
 
-What is ~compiled with warnings~? A react app has to be interpreted, the dev server is compiling the code, it is taking unfamiliar code then translating it into plain js. 
+What is **compiled with warnings**? A react app has to be interpreted, the dev server is compiling the code, it is taking unfamiliar code then translating it into plain js. 
 
 #### What looks familiar?
 - Import is just like require (that you see in your node/express app)
