@@ -45,6 +45,27 @@ What is **compiled with warnings**? A react app has to be interpreted, the dev s
 - Export default is just like module.exports (that you see in your node/express app)
 - The return statement that you see in the app function is JSX. 
 
+## Code breakdown
+- component (inside of the App.js) there is an 'App' function and that is considered a component
+- elements (inside of the App function), this looks like html and is after the return statement. 
+- if you click on the 'view page source',  you will not see the html that is inside of div#root. 
+
+React creates your DOM elements inside div#root. What this means is that inside of your App.js, the element that you want to appear on the browser will be wrapped around this div id root. 
+
+## How to create a react component 
+**Note** when creating a new file, it must be capitalized. 
+1. Import react
+2. Write your component
+3. Export your component
+
+#### To use your component
+1. Import the file into the file that you wish
+2. Call your component like this `<YourComponent></YourComponent>`
+Anything that was in that file 'YourComponent' will now be referenced as the above.
+- You may see your component call this like `<YourComponent/>`
+
+**Note** The components are very similar to the templates in express, you can modularize your html and then have it imported into the file that will be rendered for each page. 
+
 
 
 
