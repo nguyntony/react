@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# React
+#react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Terms
+- Element
+- Component
+- Props
+- Keys
 
-## Available Scripts
+## How is JSX different from HTML?
+- className vs class
+- must have closing tags
+- must start with a capital letter
+- `.map` to produce elements requires a `key` prop
 
-In the project directory, you can run:
+## Questions 
+- What is JSX?
+- Is a React element the same thing as a DOM element?
+- What's the difference between a Component and an Element?
 
-### `npm start`
+## Creating React app
+[Reference to Creating React App](https://github.com/facebook/create-react-app)
+- write this code in the terminal inside of the directory of where you would like your app  `npx create-react-app {directory name}`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### React commands
+- `npm start` this is going to be like nodemon for your react code.
+- `npm run build` this is where you create files for your express app. The build step will create an optimized files that you will put in your express /public directory 
+- `npm test`
+- `npm run eject`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+When Chris mentions ajax, what does he mean? 
 
-### `npm test`
+#### Inside the React app
+You will have a package.json; it will have the scripts that appear in the terminal when you create the react app. There are also a node modules directory and git directory as well.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Note** When creating a react app, it will automatically create a .git directory so make sure to NOT nest this creation inside of another git directory. 
 
-### `npm run build`
+#### Editing the App.js
+This file is inside of the `src` directory. When you save this file, the react dev server will load the browser, watch for changes and reload your changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+What is **compiled with warnings**? A react app has to be interpreted, the dev server is compiling the code, it is taking unfamiliar code then translating it into plain js. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### What looks familiar?
+- Import is just like require (that you see in your node/express app)
+- Export default is just like module.exports (that you see in your node/express app)
+- The return statement that you see in the app function is JSX. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
