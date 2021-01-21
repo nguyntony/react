@@ -2,28 +2,6 @@
     text-align: center;
 }
 
-/* added photos to the react */
-.gallery,
-.sailor-scouts {
-    display: flex;
-}
-
-.sailor-scouts {
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-frame {
-    max-width: 75%;
-    margin: 10px;
-}
-
-.card-frame img {
-    width: 100%;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -57,4 +35,25 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.gallery,
+.sailor-scouts {
+    display: flex;
+
+    .card-frame {
+        max-width: 85%;
+        margin: 10px;
+
+        img {
+            width: 100%;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+.sailor-scouts {
+    flex-direction: column;
+    align-items: center;
 }
