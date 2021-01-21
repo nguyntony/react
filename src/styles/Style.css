@@ -89,4 +89,12 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+#joke-header {
+  background: #d48577;
+}
+
+.joke-container {
+  background: #86a1d4;
+}
 /*# sourceMappingURL=Style.css.map */

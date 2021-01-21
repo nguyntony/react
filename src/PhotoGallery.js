@@ -6,32 +6,38 @@ const data = [
     {   
         title: 'minimoon',
         description: 'I am mini moon!',
-        url: '/photo-cards/minimoon.gif'
+        url: '/photo-cards/minimoon.gif',
+        likes: null
     },
     {   
         title: 'sailor moon',
         description: 'I am sailor moon!',
-        url: '/photo-cards/moon.gif'
+        url: '/photo-cards/moon.gif',
+        likes: 20
     },
     {   
         title: 'sailor mercury',
         description: 'I am sailor mercury!',
-        url: '/photo-cards/mercury.png'
+        url: '/photo-cards/mercury.png',
+        likes: 15
     },
     {   
         title: 'sailor mars',
         description: 'I am sailor mars!',
-        url: '/photo-cards/mars.jpg'
+        url: '/photo-cards/mars.jpg',
+        likes: 23
     },
     {   
         title: 'sailor jupiter',
         description: 'I am sailor jupiter!',
-        url: '/photo-cards/jupiter.jpg'
+        url: '/photo-cards/jupiter.jpg',
+        likes: 1
     },
     {   
         title: 'sailor venus',
         description: 'I am sailor venus!',
-        url: '/photo-cards/venus.jpg'
+        url: '/photo-cards/venus.jpg',
+        likes: null
     },
 ]
 
@@ -48,7 +54,7 @@ function PhotoGallery() {
             <h2>Sailor Scouts</h2>
             <div className="sailor-scouts">
                 {data.map((photo, idx) => 
-                    <PhotoCard url={photo.url} title={photo.title} key={idx} description={photo.description}/>
+                    <PhotoCard url={photo.url} title={photo.title} key={idx} description={photo.description} likes={photo.likes}/>
                 )}
             </div>
             {/* and we are using photocard component here */}
